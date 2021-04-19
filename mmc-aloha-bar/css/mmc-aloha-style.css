@@ -1,0 +1,52 @@
+/*make your CSS VERY specific to the plugin HTML*/
+
+#mmc-howdy-bar{
+	background-color:teal;
+	color:white;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	text-align:center;
+	padding:.3em;
+}
+/* handle the admin bar when it's showing */
+.admin-bar #mmc-howdy-bar{
+	top:32px;
+}
+
+/*button*/
+#mmc-howdy-bar .howdy-button{
+	background-color:white;
+	display: inline-block;
+	margin:0 .5em;
+	color:black;
+	padding:.2em 1em;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+/*dismiss button*/
+#mmc-howdy-bar .howdy-dismiss{
+	float:right;
+	display:inline-block;
+	background-color:rgba(255,255,255,.4);
+	font-weight: bold;
+	border-radius:1000px;
+	width:28px;
+	height:28px;
+	text-align:center;
+	line-height: 28px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 782px){
+	.admin-bar #mmc-howdy-bar{
+		top:46px;
+	}
+}
+@media screen and (max-width: 600px){
+	#mmc-howdy-bar {
+	    position: absolute;
+	}
+}
