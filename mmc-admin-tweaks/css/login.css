@@ -1,0 +1,63 @@
+body{
+	background-color:hotpink;
+}
+
+/*logo change*/
+.login h1 a{
+	background-image: url(../images/logo.svg);
+	width:100px;
+	height:100px;
+	background-size:100px;
+	background-color:pink;
+	border-radius:10000px;
+}
+.login form{
+	background-color: rgba(255,255,255,.7);
+}
+/* button */
+.wp-core-ui .button-primary{
+	background-color: #FF9110;
+	border-color:#FF9110;
+	display:block;
+	width:100%;
+	float:none;
+	margin-top:1em;
+}
+.wp-core-ui .button-primary.focus, 
+.wp-core-ui .button-primary.hover, 
+.wp-core-ui .button-primary:focus, 
+.wp-core-ui .button-primary:hover{
+	background-color:gold;
+	border-color:gold;
+}
+.wp-core-ui .button-primary.focus, 
+.wp-core-ui .button-primary:focus{
+	box-shadow: 0 0 0 1px #fff,0 0 0 3px #351302;
+}
+
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
+    border-color: #351302;
+    box-shadow: 0 0 0 1px #351302;
+    outline: 2px solid transparent;
+}
+
+.login .button.wp-hide-pw:focus {
+    background: 0 0;
+    border-color: #351302;
+    box-shadow: 0 0 0 1px #351302;
+    outline: 2px solid transparent;
+}
+
+.login form .forgetmenot{
+	float:none;
+}
+
+
+.message.register{
+	background-color: transparent;
+	font-size:2em;
+	box-shadow: none;
+	border:none;
+	color:white;
+	text-align: center;
+}
